@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reddit-dl"
+version = "0.0.3"
+authors = [
+  { name="redloaders", email="redloader@tutanota.com" },
+]
+description = "Limitless Reddit Downloader. No API no LIMIT."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "beautifulsoup4>=4.12", 
+    "m3u8>=3.5", 
+    "requests>=2.31"
+]
+
+[project.scripts]
+reddit-dl = "reddit_dl.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/reddit-dl/reddit-dl"
+"Bug Tracker" = "https://github.com/reddit-dl/reddit-dl/issues"
